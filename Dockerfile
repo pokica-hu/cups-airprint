@@ -1,5 +1,5 @@
 # base image
-FROM ubuntu:25.04
+FROM alpine:25.04
 
 # label with HEAD commit if given
 ARG GIT_COMMIT=unspecified
