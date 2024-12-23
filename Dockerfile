@@ -6,7 +6,7 @@ ARG GIT_COMMIT=unspecified
 LABEL git_commit=$GIT_COMMIT
 
 # Install the packages we need. Avahi will be included
-RUN apt-get update && apt-get install -y \
+RUN apk update && apk add -y \
 	cups \
 	cups-pdf \
   	cups-bsd \
